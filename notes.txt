@@ -1,0 +1,23 @@
+/mnt/datacrewfileshare/3
+
+
+python import_gtfs_to_sql.py path/to/gtfs/data/directory nocopy
+
+python import_gtfs_to_sql.py path/to/gtfs/data/directory nocopy
+
+python import_gtfs_to_sql.py /mnt/datacrewfileshare/3 nocopy
+
+
+bcp DimDate2 in C:\Temp\DimDate2.txt -S <ServerName> -d <DatabaseName> -U <Username> -P <password> -q -c -t  ,
+
+bcp DimDate2 in C:\Temp\DimDate2.txt -S <ServerName> -d <DatabaseName> -U <Username> -P <password> -q -c -t  ,
+
+bcp WideWorldImporters.Warehouse.StockItemTransactions format nul -f D:\BCP\StockItemTransactions_c.fmt -c -T 
+
+bcp   -s datathonsqlserver.database.windows.net format nul -f D:\BCP\StockItemTransactions_c.fmt -c -
+
+Driver={ODBC Driver 13 for SQL Server};Server=tcp:datathonsqlserver.database.windows.net,1433;Database=DataThondata;Uid=dbadministrator@datathonsqlserver;Pwd={your_password_here};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+
+BULK INSERT atathonsqlserver.database.windows.net,1433.DataThondata from '
+
+sqlcmd  -s datathonsqlserver.database.windows.net -d DataThondata -U  dbadministrator@datathonsqlserver
