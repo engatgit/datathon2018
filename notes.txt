@@ -1,19 +1,29 @@
-/mnt/datacrewfileshare/3
+Servers and connections
+Rstudio
+http://datathoncrew.australiasoutheast.cloudapp.azure.com/rstudio/
+hosted on Unix server
+ssh datathonadmin@datathoncrew.australiasoutheast.cloudapp.azure.com
+
+Sql server
+datathonsqlserver.database.windows.net
+
+Driver={ODBC Driver 13 for SQL Server};Server=tcp:datathonsqlserver.database.windows.net,1433;Database=DataThondata;Uid=datathonadmin@datathonsqlserver;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+
+Windows server with SSMS
+remote desktop  datathonwinserver.australiasoutheast.cloudapp.azure.com
+
+
+
+
+
 
 
 python import_gtfs_to_sql.py path/to/gtfs/data/directory nocopy
-
-python import_gtfs_to_sql.py path/to/gtfs/data/directory nocopy
-
 python import_gtfs_to_sql.py /mnt/datacrewfileshare/3 nocopy
 
 
 bcp DimDate2 in C:\Temp\DimDate2.txt -S <ServerName> -d <DatabaseName> -U <Username> -P <password> -q -c -t  ,
-
-bcp DimDate2 in C:\Temp\DimDate2.txt -S <ServerName> -d <DatabaseName> -U <Username> -P <password> -q -c -t  ,
-
 bcp WideWorldImporters.Warehouse.StockItemTransactions format nul -f D:\BCP\StockItemTransactions_c.fmt -c -T 
-
 bcp   -s datathonsqlserver.database.windows.net format nul -f D:\BCP\StockItemTransactions_c.fmt -c -
 
 Driver={ODBC Driver 13 for SQL Server};Server=tcp:datathonsqlserver.database.windows.net,1433;Database=DataThondata;Uid=dbadministrator@datathonsqlserver;Pwd={your_password_here};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
