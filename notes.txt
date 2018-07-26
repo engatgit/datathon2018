@@ -1,3 +1,5 @@
+all servers configured with datathonadmin admin account
+
 Servers and connections
 Rstudio
 http://datathoncrew.australiasoutheast.cloudapp.azure.com/rstudio/
